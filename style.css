@@ -4,7 +4,10 @@ body {
   justify-content: center;
   min-height: 100vh;
   background-color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
 }
+
 form {
   background-color: white;
   padding: 30px;
@@ -17,7 +20,7 @@ form {
 }
 header {
   text-align: center;
-  padding: 10px 0;
+  padding: 0px 0;
   font-family: "Courier New";
   font-size: larger;
 }
@@ -30,11 +33,15 @@ input {
   padding: 10px;
   border: none;
   outline: none;
-  font-size: 20px;
+  font-size: 18px;
   border-bottom: 2px solid gray;
   padding-left: 45px;
   font-family: "Courier New";
 }
+input:focus {
+  border-bottom: 2px solid black;
+}
+
 i {
   font-size: 24px !important;
   padding: 10px;
@@ -50,7 +57,10 @@ button {
   border: none;
   cursor: pointer;
   font-family: "Courier New";
-  transition: 0.3s ease;
+  transition: 0.5s ease-in;
+}
+button:hover {
+  box-shadow: 5px 5px black;
 }
 
 a {
@@ -60,5 +70,12 @@ a {
   color: gray;
 }
 a:hover {
+  color: black;
+}
+
+#accout {
+  margin: 30px;
+}
+h6 {
   color: black;
 }
